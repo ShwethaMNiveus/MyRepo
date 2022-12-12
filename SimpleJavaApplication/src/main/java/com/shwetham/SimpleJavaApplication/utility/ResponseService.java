@@ -1,14 +1,18 @@
 package com.shwetham.SimpleJavaApplication.utility;
 
+import java.util.ArrayList;
+
 public class ResponseService<T> {
 
-	private T t;
+	private ArrayList<T> data;
 	private String message;
-	public T getT() {
-		return t;
+	private int responseCount;
+	
+	public ArrayList<T> getData() {
+		return data;
 	}
-	public void setT(T t) {
-		this.t = t;
+	public void setT(ArrayList<T> data) {
+		this.data = data;
 	}
 	public String getMessage() {
 		return message;
@@ -16,14 +20,21 @@ public class ResponseService<T> {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public ResponseService(T t, String message) {
+	public int getResponseCount() {
+		return responseCount;
+	}
+	public void setResponseCount(int responseCount) {
+		this.responseCount = responseCount;
+	}
+	public ResponseService(ArrayList<T> data, String message, int responseCount) {
 		super();
-		this.t = t;
+		this.data = data;
 		this.message = message;
+		this.responseCount = responseCount;
 	}
 	@Override
 	public String toString() {
-		return "ResponseService [t=" + t + ", message=" + message + "]";
+		return "ResponseService [data=" + data + ", message=" + message + ", responseCount=" + responseCount + "]";
 	}
 	
 	

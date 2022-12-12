@@ -1,9 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <style>
 .user-form {
@@ -51,7 +53,7 @@
 }
 </style>
 </head>
-<body style = "background-color:#fbfbfb ;">
+<body>
 <h2 style= "text-align: center; display: block; color: red;"> Email form</h2>
 <form id="formid">
       <div class="user-form">
