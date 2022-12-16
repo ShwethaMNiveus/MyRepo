@@ -1,7 +1,6 @@
-package com.shwetham.SimpleJavaApplication.DTO;
+package com.shwetham.simplejavaapplication.dto;
 
 
-import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Nonnull;
@@ -77,6 +76,32 @@ public class VehicleDTO {
 				+ ", name=" + name + ", brand=" + brand + ", price=" + price + "]";
 	}
 
+	public VehicleDTO(String registrationNo, String vehicleType, String name, String brand, Double price) {
+		super();
+		this.registrationNo = registrationNo;
+		this.vehicleType = vehicleType;
+		this.name = name;
+		this.brand = brand;
+		this.price = price;
+	}
+	
+	
+
+	public VehicleDTO(Long id, String registrationNo, String vehicleType, String name, String brand, Double price) {
+		super();
+		this.id = id;
+		this.registrationNo = registrationNo;
+		this.vehicleType = vehicleType;
+		this.name = name;
+		this.brand = brand;
+		this.price = price;
+	}
+
+	public VehicleDTO() {
+		super();
+	}
+
+	
 	
 	
 }

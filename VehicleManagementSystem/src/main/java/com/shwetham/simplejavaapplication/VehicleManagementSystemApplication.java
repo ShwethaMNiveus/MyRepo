@@ -1,4 +1,4 @@
-package com.shwetham.SimpleJavaApplication;
+package com.shwetham.simplejavaapplication;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

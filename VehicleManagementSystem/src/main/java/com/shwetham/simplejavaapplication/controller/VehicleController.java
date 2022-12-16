@@ -1,4 +1,4 @@
-package com.shwetham.SimpleJavaApplication.Controller;
+package com.shwetham.simplejavaapplication.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shwetham.SimpleJavaApplication.DTO.VehicleDTO;
-import com.shwetham.SimpleJavaApplication.Entities.VehicleEntity;
-import com.shwetham.SimpleJavaApplication.Repository.VehicleRepository;
+import com.shwetham.simplejavaapplication.dto.VehicleDTO;
+import com.shwetham.simplejavaapplication.entities.VehicleEntity;
+import com.shwetham.simplejavaapplication.repository.VehicleRepository;
 
 @RestController
 @RequestMapping("/VehicleSystem")
@@ -61,19 +61,19 @@ public class VehicleController {
 	
 	@GetMapping("/get")
 	public List<VehicleDTO> getAllVehicle() {
-		List<VehicleDTO> LstVehicle = new ArrayList<>();
+		List<VehicleDTO> lstVehicle = new ArrayList<>();
 		
 		try {
-			List<VehicleEntity> LstVehicleEntity = vehicleRepo.findAll();
-			for(VehicleEntity obj : LstVehicleEntity ) {
-				LstVehicle.add(mapper.map(obj, VehicleDTO.class));
+			List<VehicleEntity> lstVehicleEntity = vehicleRepo.findAll();
+			for(VehicleEntity obj : lstVehicleEntity ) {
+				lstVehicle.add(mapper.map(obj, VehicleDTO.class));
 			
 			}
 			
 		}catch(Exception e) {
 			System.err.println("get error "+e);
 		}
-		return LstVehicle;
+		return lstVehicle;
 	}
 	
 	@DeleteMapping("/delete")

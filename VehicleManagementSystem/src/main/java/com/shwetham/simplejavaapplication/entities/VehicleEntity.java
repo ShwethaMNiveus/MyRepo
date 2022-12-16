@@ -1,13 +1,11 @@
-package com.shwetham.SimpleJavaApplication.Entities;
+package com.shwetham.simplejavaapplication.entities;
 
 
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
@@ -91,6 +89,8 @@ public class VehicleEntity implements java.io.Serializable{
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	
 
 	@Override
 	public String toString() {
