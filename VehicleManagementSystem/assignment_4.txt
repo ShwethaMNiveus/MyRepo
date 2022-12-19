@@ -1,0 +1,17 @@
+Hello,
+Please find the below links to check.
+
+STEP 11: Write a docker file for the program modified in STEP 8 :
+https://github.com/ShwethaMNiveus/MyRepo/blob/d4e26f61d0b3846d7951542c3824da970868fefa/VehicleManagementSystem/Dockerfile
+
+STEP 12: Create a docker image and PUSH the image to a Cloud Artifact registry on GCP.:
+https://console.cloud.google.com/artifacts/docker/niveustraining/asia-south1/assignment4/vehicle-management-docker?project=niveustraining
+
+STEP 13: Create a kubernetes deployment file to deploy the application to google kubernetes engine (GKE).:
+https://github.com/ShwethaMNiveus/MyRepo/blob/f4b549b4c627b686f7c9f62a08519483766bf259/VehicleManagementSystem/Kubernate_Deployment.png
+
+STEP 14: Write Unit test cases for the API created:
+https://github.com/ShwethaMNiveus/MyRepo/blob/f4b549b4c627b686f7c9f62a08519483766bf259/VehicleManagementSystem/src/test/java/com/shwetham/simplejavaapplication/VehicleManagementSystemApplicationTests.java
+
+STEP 15: Measure the code coverage of the API using SonarLint.:
+https://github.com/ShwethaMNiveus/MyRepo/blob/f4b549b4c627b686f7c9f62a08519483766bf259/VehicleManagementSystem/sonarlint_code_converage.png
